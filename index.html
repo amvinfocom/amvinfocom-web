@@ -3,196 +3,490 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AMV INFOCOM PRIVATE LIMITED | IT Hardware, Infrastructure & AMC Solutions</title>
-  <meta name="description" content="Official website of AMV INFOCOM PRIVATE LIMITED. Enterprise IT hardware, structured networking, hardware peripherals, and AMC services in Chennai." />
+  <title>AMV INFOCOM PRIVATE LIMITED | IT Hardware, Enterprise Networking & AMC Solutions</title>
+  <meta name="description" content="Official website of AMV INFOCOM PRIVATE LIMITED (CIN: U72400TN2013PTC093380, GST: 33AAMCA1128J1ZV). Leading supplier of commercial IT hardware, structured cabling, firewalls, POS software, and AMC services in Chennai." />
+  <meta name="keywords" content="AMV Infocom, IT Hardware Chennai, Enterprise AMC Chennai, Structured Cabling, POS Software, Server Storage, Network Firewalls, Computer Repair Chennai" />
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
 
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <div>
-        <a href="#" class="text-xl font-extrabold tracking-tight text-blue-900">
-          AMV INFOCOM <span class="text-xs uppercase px-2 py-0.5 ml-1 bg-blue-100 text-blue-800 rounded font-semibold">Pvt Ltd</span>
-        </a>
-        <p class="text-[11px] text-slate-500 font-medium tracking-wide">Enterprise IT & Infrastructure Solutions</p>
+  <!-- Top Info Bar -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+        <span><strong class="text-blue-400">CIN:</strong> U72400TN2013PTC093380</span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span><strong class="text-blue-400">GSTIN:</strong> 33AAMCA1128J1ZV</span>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <span class="text-slate-400">Incorporated in 2013 &bull; Chennai, India</span>
       </div>
-      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-        <a href="#about" class="hover:text-blue-700 transition">About</a>
-        <a href="#solutions" class="hover:text-blue-700 transition">Solutions</a>
+      <div class="flex items-center gap-4">
+        <a href="tel:04442660400" class="hover:text-white transition flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          044-42660400
+        </a>
+        <a href="https://wa.me/917299941047" target="_blank" class="text-emerald-400 hover:text-emerald-300 transition flex items-center gap-1 font-semibold">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          +91 72999 41047
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex flex-col">
+        <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-blue-900">
+          AMV INFOCOM <span class="text-xs uppercase px-2 py-0.5 ml-1 bg-blue-100 text-blue-800 rounded font-bold">Pvt Ltd</span>
+        </span>
+        <span class="text-[11px] text-slate-500 font-semibold tracking-wider uppercase">Enterprise IT Hardware &bull; System Integrator &bull; AMC</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-600">
+        <a href="#about" class="hover:text-blue-700 transition">About Company</a>
+        <a href="#products" class="hover:text-blue-700 transition">Hardware & Products</a>
         <a href="#services" class="hover:text-blue-700 transition">Services & AMC</a>
+        <a href="#solutions" class="hover:text-blue-700 transition">Solutions</a>
+        <a href="#compliance" class="hover:text-blue-700 transition">Compliance</a>
         <a href="#contact" class="hover:text-blue-700 transition">Contact</a>
       </nav>
+
       <div class="flex items-center gap-3">
-        <a href="https://wa.me/917299941047" target="_blank" class="hidden sm:inline-flex items-center text-xs font-semibold px-3 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white transition">
-          WhatsApp Support
-        </a>
-        <a href="#contact" class="bg-blue-700 hover:bg-blue-800 text-white text-xs sm:text-sm font-medium px-4 py-2 rounded-lg transition shadow-sm">
-          Get a Quote
+        <a href="#contact" class="bg-blue-700 hover:bg-blue-800 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-lg shadow-sm transition">
+          Request Quotation
         </a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="py-20 lg:py-28 bg-gradient-to-b from-blue-950 via-slate-900 to-slate-900 text-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <div class="inline-block px-3 py-1 mb-6 rounded-full bg-blue-900/60 border border-blue-700/50 text-blue-300 text-xs font-semibold uppercase tracking-wider">
-        Registered Corporate IT Supplier & System Integrator
+  <section class="relative bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 lg:py-28 overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="relative max-w-6xl mx-auto px-6 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-900/60 border border-blue-600/40 text-blue-300 text-xs font-semibold mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Reliable B2B & Public Sector IT Partner Since 2013
       </div>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-        Turnkey IT Infrastructure & Hardware Solutions
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
+        Turnkey Enterprise IT Hardware, Structured Infrastructure & AMC Support
       </h1>
-      <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-        Equipping enterprises, corporate facilities, and institutions with genuine commercial hardware, high-speed networking, server racks, and proactive Annual Maintenance Contracts (AMC).
+      <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+        AMV INFOCOM PRIVATE LIMITED is a Chennai-based technology solutions provider specializing in commercial workstation supply, enterprise rack storage (NAS/SAN), network firewall engineering, and SLA-backed Annual Maintenance Contracts for corporations and institutions.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-7 py-3.5 rounded-lg shadow-lg transition">Request Quotation / Tender Enquiry</a>
-        <a href="#solutions" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-7 py-3.5 rounded-lg transition">View Offerings</a>
+        <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg transition">
+          Submit Commercial RFP / BoQ
+        </a>
+        <a href="#products" class="bg-slate-800/80 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-7 py-3.5 rounded-xl transition">
+          Browse Catalog
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Corporate Highlights -->
-  <section id="about" class="py-16 bg-white border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-      <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
-        <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold mb-4">01</div>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">OEM Hardware Sourcing</h3>
-        <p class="text-sm text-slate-600 leading-relaxed">Direct commercial channel sourcing for enterprise desktops, workstations, rack servers, and genuine components with manufacturer warranty.</p>
+  <!-- Metrics Bar -->
+  <section class="bg-white border-b border-slate-200 py-8 shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold text-blue-800">13+ Years</p>
+        <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Operational Excellence</p>
       </div>
-      <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
-        <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold mb-4">02</div>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">Structured Maintenance (AMC)</h3>
-        <p class="text-sm text-slate-600 leading-relaxed">SLA-backed comprehensive and non-comprehensive contracts covering hardware diagnostics, health audits, and rapid part replacement.</p>
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold text-blue-800">100%</p>
+        <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Genuine OEM Sourcing</p>
       </div>
-      <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
-        <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold mb-4">03</div>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">Infrastructure & Cabling</h3>
-        <p class="text-sm text-slate-600 leading-relaxed">Structured LAN cabling, commercial fiber runs, managed switch configuration, firewalls, and server room deployment.</p>
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold text-blue-800">4.5 / 5.0</p>
+        <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Rated IndiaMART Supplier</p>
+      </div>
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold text-blue-800">SLA-Backed</p>
+        <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">Comprehensive AMC</p>
       </div>
     </div>
   </section>
 
-  <!-- Products & Solutions -->
-  <section id="solutions" class="py-20 bg-slate-50">
+  <!-- About Company -->
+  <section id="about" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-block px-3 py-1 rounded bg-blue-100 text-blue-800 font-bold text-xs uppercase tracking-wider">About AMV INFOCOM</div>
+          <h2 class="text-3xl font-extrabold text-slate-900 leading-snug">
+            Your Trusted Technology Infrastructure & Distribution Partner
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Incorporated on 17th October 2013 under the Registrar of Companies (RoC Chennai), <strong>AMV INFOCOM PRIVATE LIMITED</strong> has developed an established track record in the distribution of IT hardware, computer peripheral equipment, database infrastructure, and enterprise maintenance services across South India.
+          </p>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Under the experienced management of our founders and directors, we bridge the gap between OEM manufacturers and corporate enterprises. Whether executing structured network cabling for multi-storey offices, deploying firewalls, providing point-of-sale software packages, or supplying servers for tender requirements, AMV INFOCOM prioritizes uncompromising quality, timely delivery, and dependable on-site technical support.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <h4 class="font-bold text-slate-900 text-sm mb-1">Direct OEM Tie-Ups</h4>
+              <p class="text-xs text-slate-500">Tier-1 vendor network ensuring factory-fresh products with valid manufacturer warranties.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+              <h4 class="font-bold text-slate-900 text-sm mb-1">Total Quality Management (TQM)</h4>
+              <p class="text-xs text-slate-500">Every piece of hardware passes rigorous diagnostic testing before commercial handover.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+            <h3 class="text-lg font-bold text-slate-900 border-b border-slate-100 pb-3">Corporate Fact Sheet</h3>
+            <ul class="text-xs sm:text-sm space-y-3 text-slate-600">
+              <li class="flex justify-between py-1 border-b border-slate-50">
+                <span class="font-semibold text-slate-700">Legal Entity</span>
+                <span>Private Limited Company</span>
+              </li>
+              <li class="flex justify-between py-1 border-b border-slate-50">
+                <span class="font-semibold text-slate-700">Incorporation Date</span>
+                <span>17 October 2013</span>
+              </li>
+              <li class="flex justify-between py-1 border-b border-slate-50">
+                <span class="font-semibold text-slate-700">Registrar of Companies</span>
+                <span>RoC - Chennai</span>
+              </li>
+              <li class="flex justify-between py-1 border-b border-slate-50">
+                <span class="font-semibold text-slate-700">Primary Business Role</span>
+                <span>Supplier, Retailer & Service Provider</span>
+              </li>
+              <li class="flex justify-between py-1 border-b border-slate-50">
+                <span class="font-semibold text-slate-700">Payment Modes</span>
+                <span>RTGS, NEFT, Cheque, Online, Wire</span>
+              </li>
+              <li class="flex justify-between py-1">
+                <span class="font-semibold text-slate-700">Logistics & Dispatch</span>
+                <span>Road, Air, Cargo (All India Delivery)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product & Hardware Catalog (From IndiaMART & Commercial Line) -->
+  <section id="products" class="py-20 bg-white border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center max-w-2xl mx-auto mb-14">
-        <h2 class="text-3xl font-bold text-slate-900 mb-3">Enterprise Solutions</h2>
-        <p class="text-slate-600 text-sm">Dependable IT equipment and infrastructure designed to ensure seamless business continuity.</p>
+        <div class="inline-block px-3 py-1 rounded bg-blue-100 text-blue-800 font-bold text-xs uppercase tracking-wider mb-2">Our Product Portfolio</div>
+        <h2 class="text-3xl font-extrabold text-slate-900">Commercial Hardware & Peripherals</h2>
+        <p class="text-slate-600 text-sm mt-2">Comprehensive sourcing for offices, data closets, and corporate end-users.</p>
       </div>
+
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 transition">
-          <h4 class="font-bold text-slate-900 mb-2">Commercial Systems & Workstations</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Enterprise desktops, high-performance engineering workstations, multi-display monitors, and corporate laptops.</p>
+        <!-- Card 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-500 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">💻</div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Commercial Desktops & Laptops</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">Enterprise-grade computing solutions including compact desktops, ultra-durable business laptops, and high-performance CAD/graphics workstations.</p>
+          <span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded">Dell &bull; HP &bull; Lenovo &bull; Custom Built</span>
         </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 transition">
-          <h4 class="font-bold text-slate-900 mb-2">Servers & Storage Racks</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Rack-mount & tower servers, NAS network storage, high-end enterprise SSD upgrades, and backup appliances.</p>
+
+        <!-- Card 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-500 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">🗄️</div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Enterprise Storage & External Drives</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">NAS (Network Attached Storage), SAN Storage units, high-capacity Tape Drives, enterprise SSDs, and external storage units for business continuity and disaster backup.</p>
+          <span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded">NAS &bull; SAN &bull; SAS &bull; Tape &bull; Enterprise SSD</span>
         </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 transition">
-          <h4 class="font-bold text-slate-900 mb-2">Networking Hardware & Routing</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Layer 2/3 Managed Switches, enterprise Wi-Fi 6 APs, hardware firewalls, and industrial routers.</p>
+
+        <!-- Card 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-500 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">🖨️</div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Computer Peripherals & Equipment</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">High-speed laser printers, document scanners, heavy-duty server cabinets, optical drives, ergonomic peripherals, and sound monitoring equipment.</p>
+          <span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded">Printers &bull; Scanners &bull; Cabinets &bull; Optical Drives</span>
         </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 transition">
-          <h4 class="font-bold text-slate-900 mb-2">Online UPS & Power Backups</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Online uninterrupted power systems, isolation transformers, and battery bank maintenance for critical server loads.</p>
+
+        <!-- Card 4 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-500 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">🌐</div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Network Switches & Firewalls</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">Layer 2 and Layer 3 managed switches, Gigabit PoE switches, enterprise hardware firewalls, dual-band Wi-Fi access points, and rackmount routers.</p>
+          <span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded">Cisco &bull; TP-Link &bull; Sophos &bull; Fortinet</span>
         </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 transition">
-          <h4 class="font-bold text-slate-900 mb-2">CCTV, Biometrics & Access Control</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Commercial IP cameras, NVR surveillance systems, attendance biometrics, and electronic access systems.</p>
+
+        <!-- Card 5 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-500 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">📹</div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">CCTV, DVR & NVR Surveillance</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">IP surveillance solutions, high-definition dome/bullet cameras, multi-channel DVRs, NVR storage appliances, and remote monitoring setup for office and warehouse premises.</p>
+          <span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded">Hikvision &bull; CP PLUS &bull; Dahua &bull; NVR Storage</span>
         </div>
-        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-blue-300 transition">
-          <h4 class="font-bold text-slate-900 mb-2">Spares & Peripherals</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">Original OEM power supplies, RAM modules, patch panels, CAT6 accessories, and commercial barcode gear.</p>
+
+        <!-- Card 6 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-500 hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl mb-4">💾</div>
+          <h3 class="text-base font-bold text-slate-900 mb-2">Application & Enterprise Software</h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-3">Authorized licensing for Microsoft Windows & Office 365, Oracle database environments, commercial endpoint antivirus solutions, and retail Point of Sale (POS) software.</p>
+          <span class="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded">Microsoft &bull; Oracle &bull; POS &bull; Antivirus</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact & Lead Capture -->
-  <section id="contact" class="py-20 bg-white border-t border-slate-200">
+  <!-- Technical Services & AMC Section -->
+  <section id="services" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <div class="inline-block px-3 py-1 rounded bg-blue-100 text-blue-800 font-bold text-xs uppercase tracking-wider mb-2">Services & Maintenance</div>
+        <h2 class="text-3xl font-extrabold text-slate-900">Proactive IT Support & Maintenance</h2>
+        <p class="text-slate-600 text-sm mt-2">Eliminating workplace downtime through systematic diagnostics and rapid-response engineers.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="text-blue-700 font-extrabold text-2xl mb-3">01</div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">Annual Maintenance Contracts (AMC)</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Comprehensive (with spare parts) and Non-Comprehensive contracts tailored for PCs, servers, UPS, and network gear with guaranteed SLAs.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="text-blue-700 font-extrabold text-2xl mb-3">02</div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">Network Structured Cabling</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">End-to-end design and installation of CAT6/6A network cabling, fiber optic patch runs, server rack cable dressing, and patch panel terminations.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="text-blue-700 font-extrabold text-2xl mb-3">03</div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">Computer Repair & Board Service</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Chip-level motherboard repair, SMPS replacement, display panel repair, data recovery, and hardware diagnostic services executed by qualified technicians.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="text-blue-700 font-extrabold text-2xl mb-3">04</div>
+          <h4 class="font-bold text-slate-900 text-base mb-2">Computer Installation & Deployment</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">Bulk OS imaging, enterprise software deployment, domain joins, network printer installations, and workstation configuration for new office setups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions & Corporate Tenders -->
+  <section id="solutions" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-gradient-to-r from-blue-900 to-indigo-900 rounded-3xl p-8 sm:p-12 text-white shadow-xl">
+        <div class="max-w-3xl space-y-5">
+          <span class="inline-block px-3 py-1 rounded bg-blue-800 text-blue-200 text-xs font-semibold uppercase tracking-wider">Public Sector & Corporate Procurement</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold leading-tight">
+            GeM, Commercial Tenders & Institutional Supply
+          </h2>
+          <p class="text-sm sm:text-base text-blue-100 leading-relaxed">
+            AMV INFOCOM regularly participates in institutional procurement and government tender executions across Tamil Nadu. We supply compliant technical hardware configurations adhering to rigorous specifications with full technical documentation and manufacturer authorization.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-3">
+            <a href="#contact" class="bg-white hover:bg-slate-100 text-blue-900 font-bold px-6 py-3 rounded-xl transition text-sm shadow">
+              Submit BoQ for Tender / Bidding
+            </a>
+            <a href="mailto:admin@amvinfocom.in" class="bg-blue-800/80 hover:bg-blue-800 text-white border border-blue-600 font-semibold px-6 py-3 rounded-xl transition text-sm">
+              Email BoQ: admin@amvinfocom.in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statutory & Legal Compliance Bar -->
+  <section id="compliance" class="py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <h2 class="text-2xl font-bold text-slate-900">Corporate Governance & Compliance</h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-1">Verified registration details under the Ministry of Corporate Affairs, Government of India.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs">
+        <div class="p-4 bg-white rounded-xl border border-slate-200">
+          <p class="text-slate-400 font-semibold uppercase mb-1">Corporate CIN</p>
+          <p class="font-bold text-slate-800">U72400TN2013PTC093380</p>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-slate-200">
+          <p class="text-slate-400 font-semibold uppercase mb-1">GST Identification</p>
+          <p class="font-bold text-slate-800">33AAMCA1128J1ZV</p>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-slate-200">
+          <p class="text-slate-400 font-semibold uppercase mb-1">NIC Classification</p>
+          <p class="font-bold text-slate-800">7240 - Database & IT Content</p>
+        </div>
+        <div class="p-4 bg-white rounded-xl border border-slate-200">
+          <p class="text-slate-400 font-semibold uppercase mb-1">Registration Authority</p>
+          <p class="font-bold text-slate-800">RoC Chennai, Tamil Nadu</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section & Form -->
+  <section id="contact" class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Official Address Details -->
         <div class="lg:col-span-5 space-y-6">
           <div>
-            <h2 class="text-3xl font-bold text-slate-900 mb-3">Connect With Us</h2>
-            <p class="text-slate-600 text-sm">Reach out to our procurement and technical operations team for quotes, tender submissions, or AMC assessments.</p>
+            <div class="inline-block px-3 py-1 rounded bg-blue-100 text-blue-800 font-bold text-xs uppercase tracking-wider mb-2">Get In Touch</div>
+            <h2 class="text-3xl font-extrabold text-slate-900">Contact AMV INFOCOM</h2>
+            <p class="text-slate-600 text-sm mt-2">Connect with our sales and technical support desk for prompt assistance and pricing.</p>
           </div>
 
           <div class="space-y-4 text-sm text-slate-700">
-            <div class="flex items-start gap-3">
-              <span class="font-semibold text-blue-900 min-w-[70px]">Address:</span>
-              <span>Chennai, Tamil Nadu - 600106, India</span>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <p class="font-bold text-blue-900 mb-1">Head Office / Registered Address:</p>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Door No. 62/30, 4th Street, Nammalwarpet,<br />
+                Chennai, Tamil Nadu &ndash; 600012, India
+              </p>
             </div>
-            <div class="flex items-start gap-3">
-              <span class="font-semibold text-blue-900 min-w-[70px]">Email:</span>
-              <a href="mailto:admin@amvinfocom.in" class="text-blue-600 hover:underline">admin@amvinfocom.in</a>
+
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <p class="font-bold text-blue-900 mb-1">Operational Office / Hub:</p>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Opposite Syndicate Bank, TSD Nagar,<br />
+                Arumbakkam, Chennai, Tamil Nadu &ndash; 600106, India
+              </p>
             </div>
-            <div class="flex items-start gap-3">
-              <span class="font-semibold text-blue-900 min-w-[70px]">Phone:</span>
-              <span>044-42660400 / +91 72999 41047</span>
-            </div>
-            <div class="flex items-start gap-3">
-              <span class="font-semibold text-blue-900 min-w-[70px]">Hours:</span>
-              <span>Mon - Sat: 9:30 AM to 6:30 PM</span>
+
+            <div class="space-y-2 pt-2 text-xs">
+              <div class="flex items-center gap-3">
+                <span class="font-bold text-slate-900 w-24">Telephone:</span>
+                <a href="tel:04442660400" class="text-blue-600 hover:underline">044-42660400</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="font-bold text-slate-900 w-24">Direct Mobile:</span>
+                <a href="tel:7299941047" class="text-blue-600 hover:underline">+91 72999 41047</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="font-bold text-slate-900 w-24">Official Email:</span>
+                <a href="mailto:admin@amvinfocom.in" class="text-blue-600 hover:underline">admin@amvinfocom.in</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="font-bold text-slate-900 w-24">Working Hours:</span>
+                <span class="text-slate-600">Monday &ndash; Saturday: 9:30 AM to 6:30 PM</span>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- Right: Real Working Form -->
         <div class="lg:col-span-7">
-          <form action="https://api.web3forms.com/submit" method="POST" class="bg-slate-50 p-8 rounded-2xl border border-slate-200 space-y-5">
-            <h3 class="text-lg font-bold text-slate-900 mb-2">Request a Quote / AMC Consultation</h3>
-            
-            <input type="hidden" name="access_key" value="bc05f91c-fb1a-449d-a0df-a72e81df3d01E" />
-            <input type="hidden" name="subject" value="New Website Inquiry - AMV INFOCOM" />
-            <input type="hidden" name="from_name" value="AMV Infocom Web Portal" />
+          <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Request Commercial Quote / AMC Proposal</h3>
+            <p class="text-xs text-slate-500 mb-6">Inquiries are directly routed to our administrative desk.</p>
 
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Contact Name</label>
-                <input type="text" name="name" required class="w-full px-3 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Full Name" />
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Company / Organization</label>
-                <input type="text" name="company" class="w-full px-3 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Company Name" />
-              </div>
-            </div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+              <!-- Web3Forms API Key -->
+              <input type="hidden" name="access_key" value="bc05f91c-fb1a-449d-a0df-a72e81df3d01" />
+              <input type="hidden" name="subject" value="New Commercial Inquiry - AMV INFOCOM" />
+              <input type="hidden" name="from_name" value="AMV Infocom Web Portal" />
 
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email</label>
-                <input type="email" name="email" required class="w-full px-3 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="admin@domain.com" />
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name *</label>
+                  <input type="text" name="name" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Contact Person" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Company / Organization *</label>
+                  <input type="text" name="company" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Company Name" />
+                </div>
               </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Phone</label>
-                <input type="tel" name="phone" required class="w-full px-3 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="+91 XXXXX XXXXX" />
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address *</label>
+                  <input type="email" name="email" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="name@company.com" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone / Mobile *</label>
+                  <input type="tel" name="phone" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="+91 XXXXX XXXXX" />
+                </div>
               </div>
-            </div>
 
-            <div>
-              <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Requirement Overview</label>
-              <textarea name="requirements" rows="3" required class="w-full px-3 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Specify hardware BOM, workstation counts, networking, or AMC scope..."></textarea>
-            </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Category of Interest</label>
+                <select name="category" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 text-slate-700">
+                  <option value="Annual Maintenance Contract (AMC)">Annual Maintenance Contract (AMC)</option>
+                  <option value="IT Hardware & Workstation Procurement">IT Hardware & Workstation Procurement</option>
+                  <option value="Server / Storage (NAS/SAN)">Server / Storage (NAS/SAN)</option>
+                  <option value="Network Structured Cabling & Switching">Network Structured Cabling & Switching</option>
+                  <option value="Firewall & Cybersecurity Solutions">Firewall & Cybersecurity Solutions</option>
+                  <option value="CCTV, NVR & Surveillance">CCTV, NVR & Surveillance</option>
+                  <option value="Tender / BoQ Requirement">Tender / BoQ Requirement</option>
+                  <option value="POS / Application Software">POS / Application Software</option>
+                </select>
+              </div>
 
-            <button type="submit" class="w-full py-3 bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-lg shadow-sm transition text-sm">
-              Submit Enquiry
-            </button>
-          </form>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Requirement / BoQ Details *</label>
+                <textarea name="message" rows="3" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Please provide quantities, technical specifications, or timeline..."></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-xl shadow-md transition text-sm">
+                Submit Requirement for Instant Quote
+              </button>
+            </form>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-950 text-slate-400 py-8 text-xs border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+  <footer class="bg-slate-950 text-slate-400 py-12 text-xs border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
       <div>
-        <p class="font-semibold text-white">AMV INFOCOM PRIVATE LIMITED</p>
-        <p class="mt-0.5">Corporate Registration & Enterprise IT Solutions Provider | Chennai, TN</p>
+        <p class="font-extrabold text-white text-base mb-2">AMV INFOCOM PVT LTD</p>
+        <p class="text-slate-400 leading-relaxed">
+          Comprehensive enterprise technology supply, server room deployment, and certified AMC support in Chennai, Tamil Nadu.
+        </p>
       </div>
+      <div>
+        <p class="font-bold text-white text-sm mb-2">Quick Navigation</p>
+        <ul class="space-y-1 text-slate-400">
+          <li><a href="#about" class="hover:text-white transition">About Company</a></li>
+          <li><a href="#products" class="hover:text-white transition">Hardware Catalog</a></li>
+          <li><a href="#services" class="hover:text-white transition">AMC & Cabling Services</a></li>
+          <li><a href="#compliance" class="hover:text-white transition">MCA & GST Compliance</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-bold text-white text-sm mb-2">Solutions & Products</p>
+        <ul class="space-y-1 text-slate-400">
+          <li>Enterprise Desktops & Laptops</li>
+          <li>NAS / SAN Rack Storage</li>
+          <li>Network Structured Cabling</li>
+          <li>POS & Application Software</li>
+          <li>CCTV & Security Systems</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-bold text-white text-sm mb-2">Statutory Details</p>
+        <p class="leading-relaxed">
+          <strong>CIN:</strong> U72400TN2013PTC093380<br />
+          <strong>GST:</strong> 33AAMCA1128J1ZV<br />
+          <strong>Email:</strong> admin@amvinfocom.in<br />
+          <strong>Phone:</strong> 044-42660400
+        </p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pt-6 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500">
       <p>&copy; 2026 AMV INFOCOM PRIVATE LIMITED. All rights reserved.</p>
+      <p>Hosted securely on GitHub Pages with global SSL encryption.</p>
     </div>
   </footer>
 
