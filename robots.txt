@@ -1,0 +1,6 @@
+# robots.txt for https://amvinfocom.in/
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://amvinfocom.in/sitemap.xml
